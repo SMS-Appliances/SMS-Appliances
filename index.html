@@ -9,18 +9,18 @@
   <link rel="apple-touch-icon" href="icon-192.png">
   <style>
     :root {
-      --ink: #17313b;
-      --muted: #5c7078;
-      --brand: #117c75;
-      --brand-dark: #0c5e59;
-      --accent: #ef7c4a;
-      --gold: #f3bd3f;
-      --cool: #e9f7f5;
-      --warm: #fff4e7;
+      --ink: #272522;
+      --muted: #6f6965;
+      --brand: #b98778;
+      --brand-dark: #695753;
+      --accent: #b67666;
+      --gold: #c9a08f;
+      --cool: #f4f1ee;
+      --warm: #fbf3ef;
       --paper: #ffffff;
-      --line: #d8e4e5;
-      --soft: #f7faf9;
-      --shadow: 0 18px 42px rgba(23, 49, 59, .14);
+      --line: #ded6d2;
+      --soft: #faf8f6;
+      --shadow: 0 18px 42px rgba(39, 37, 34, .14);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
@@ -113,7 +113,7 @@
     .btn-primary {
       background: var(--accent);
       color: #fff;
-      box-shadow: 0 12px 24px rgba(239,124,74,.24);
+      box-shadow: 0 12px 24px rgba(182,118,102,.24);
     }
     .btn-secondary {
       background: var(--ink);
@@ -127,8 +127,8 @@
 
     .hero {
       background:
-        radial-gradient(circle at 18% 12%, rgba(243,189,63,.24), transparent 28%),
-        linear-gradient(135deg, var(--cool), #fff 46%, var(--warm));
+        radial-gradient(circle at 18% 12%, rgba(201,160,143,.22), transparent 28%),
+        linear-gradient(135deg, #f7f5f3, #fff 45%, var(--warm));
       overflow: hidden;
     }
     .hero-inner {
@@ -152,6 +152,13 @@
       padding: 8px 12px;
       font-weight: 900;
       font-size: .84rem;
+    }
+    .hero-logo {
+      width: min(390px, 88%);
+      height: auto;
+      display: block;
+      margin: 0 0 16px;
+      filter: drop-shadow(0 12px 18px rgba(39,37,34,.12));
     }
     h1 {
       margin: 18px 0 14px;
@@ -199,7 +206,7 @@
       width: min(620px, 100%);
       height: auto;
       display: block;
-      filter: drop-shadow(0 24px 36px rgba(23,49,59,.18));
+      filter: drop-shadow(0 24px 36px rgba(39,37,34,.18));
     }
     .status-card {
       position: absolute;
@@ -259,7 +266,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 22px;
-      box-shadow: 0 10px 28px rgba(23,49,59,.07);
+      box-shadow: 0 10px 28px rgba(39,37,34,.07);
     }
     .card h3 {
       margin: 0 0 12px;
@@ -318,7 +325,7 @@
       line-height: 1;
       margin-bottom: 9px;
     }
-    .stat span { color: #c9dadd; font-weight: 750; }
+    .stat span { color: #e4d8d3; font-weight: 750; }
 
     .process {
       counter-reset: step;
@@ -372,7 +379,7 @@
       padding: 20px;
     }
     .stars {
-      color: #d99a00;
+      color: var(--accent);
       font-weight: 900;
       margin-bottom: 10px;
     }
@@ -394,7 +401,7 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 24px;
-      box-shadow: 0 10px 28px rgba(23,49,59,.07);
+      box-shadow: 0 10px 28px rgba(39,37,34,.07);
     }
     .review-submit h3 {
       margin: 0 0 12px;
@@ -447,7 +454,7 @@
     }
 
     .contact {
-      background: linear-gradient(135deg, var(--ink), #215566);
+      background: linear-gradient(135deg, var(--ink), #5a4742);
       color: #fff;
     }
     .contact-grid {
@@ -460,7 +467,7 @@
     .contact p,
     .contact li,
     .hours {
-      color: #d4e3e6;
+      color: #eadfdb;
     }
     .contact li::before { background: var(--gold); }
     .contact-card {
@@ -506,8 +513,8 @@
     }
 
     footer {
-      background: #102831;
-      color: #cbdde0;
+      background: #1d1b19;
+      color: #e1d8d4;
       padding: 24px 0;
     }
     .footer-inner {
@@ -611,6 +618,7 @@
       <div class="hero-inner">
         <div>
           <span class="eyebrow">Fast, Reliable Appliance Repair Across DFW</span>
+          <img class="hero-logo" src="sma-appliances-logo.png" alt="SMA Appliances">
           <h1 id="hero-title">Appliance repair when you need it most.</h1>
           <p>SMA Appliances repairs residential and commercial appliances quickly, professionally, and at affordable prices. Our experienced technicians get your refrigerator, washer, dryer, oven, and other essential appliances back up and running.</p>
           <div class="hero-actions">
